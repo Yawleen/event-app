@@ -1,0 +1,107 @@
+.event h1 {
+    text-align: center;
+    margin-top: 35px;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: white;
+    padding: 7px;
+}
+
+.event > div:first-child {
+    width: 100%;
+    background: linear-gradient(45deg, #097a81, #018a7a);
+    height: 160px;
+}
+
+.event > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: 200px;
+    background-color: #222;
+    border-radius: 5px;
+    top: -40px;
+    padding-left: 15px;
+}
+
+.card > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.circleImg {
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #f1f1f1;
+    width: 147px;
+    height: 147px;
+    overflow: hidden;
+}
+
+.card > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+    color: #018a7a;
+}
+
+.card > div:last-child div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.card svg {
+    margin-bottom: 5px;
+}
+
+.card > div:last-child div:first-child {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card > div:last-child div:last-child {
+    font-style: italic;
+}
+
+.card + p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+@media all and (max-width: 420px) {
+    .card {
+        flex-direction: column;
+        height: 350px;
+        padding-left: 0;
+        padding-top: 15px;
+
+    }
+
+    .card > div:first-child {
+       width: 100%;
+    }
+    
+    .card > div:last-child {
+      align-items: center;
+    }
+
+    .card > div:last-child div {
+        align-items: center;
+    }
+    
+}

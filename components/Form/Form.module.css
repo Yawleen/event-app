@@ -1,0 +1,60 @@
+.form {
+    width: 520px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 1px 1px 3px rgba(56, 56, 56, 0.478);
+}
+
+.form > div {
+   align-items: center;
+}
+
+.form > div label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.form select {
+    width: 140px;
+    height: 100%;
+}
+
+.form button {
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: white;
+    background: #04deb3;
+    border-radius: 3px;
+    border: none;
+}
+
+@media all and (max-width: 545px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+    }
+
+    .form > div {
+        height: 33.6px;
+     }
+
+     .form > div:first-child {
+        margin-bottom: 15px;
+     }
+
+     .form > div label {
+        width: 40px;
+    }
+
+     .form button {
+        margin-top: 25px;
+     }
+     
+    
+}

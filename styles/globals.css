@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-width: 320px;
+}
+
+body {
+  color: #222;
+  background-color: #c0e8e0;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -12,5 +21,51 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+}
+
+.container-input {
+  max-width: 100%;
+  margin-top: 35px;
+}
+
+.container-cards {
+  max-width: 100%;
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.container-cards > .flex-row {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media all and (max-width: 500px) {
+  
+  #card-1 img {
+      object-position: 0 20%;
+  }
+
+  #card-2 img {
+      object-position: 0 65%;
+  }
+
 }
